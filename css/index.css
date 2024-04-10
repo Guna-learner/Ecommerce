@@ -1,0 +1,615 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+#navbar{
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+     align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+.leftnav{
+    width: 30%;
+    height: inherit;
+    display: flex;
+    /* justify-content: center;  */
+    align-items: center;
+}
+.leftnav > h1{
+    margin-left: 40px;
+}
+
+.rightnav {
+    height: 10vh;
+    width: 65%;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: end;
+   
+}
+.rightnav  > li > a{
+    text-decoration: none;
+    color: rgb(250, 253, 255);
+   margin-right: 50px;
+}
+
+.rightnav > li > button{
+    margin-right: 50px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.356);
+    font-size: large;
+    padding: 6%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 6%;
+    transition: all 0.6s  ease;
+    
+}
+.rightnav > li > .loginhidden{
+    display: none;
+}
+.rightnav > li > button:hover{
+    color: rgba(0, 0, 0, 0.651);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+
+/* .User{
+    margin-right: 20px;
+    background-color: aliceblue;
+    padding: 1%;
+    border-radius: 50%;
+    color: black;
+    cursor: pointer;
+    /* display: none; */
+/* } */
+/* .profile{
+    position: absolute;
+    width: 25%;
+    height: 30vh;
+    background-color: rgb(252, 5, 5);
+    right: 4%;
+    top: 80%;
+    transition: 0.6 ease-in-out;
+    display: none;
+}
+#drop{
+    margin-right: 3rem;
+}
+.User:hover ~ .profile{
+    display: block;
+    transition: 0.6 ease-in-out;
+}  */
+
+
+
+.usercontain{
+margin-right: 1.4rem;
+    height: 80%;
+    width: 6%;
+    justify-content: center;
+    align-items: center;
+    display: none;
+ /* display: flex; */
+}
+.User-Visible{
+    display:flex;
+   }
+.usercontain .User{
+    width: 60%;
+    height: 55%;
+    background-color: aliceblue;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+.usercontain:hover{
+    cursor: pointer;
+}
+
+
+.dropdown{
+    width: 10%;
+    height: 6vh;
+    position: absolute;
+    background-color: rgba(48, 46, 46, 0.596);
+    top: 80%;
+    right: 4%;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    transition: all 0.6s ease-in-out;
+}
+.dropdown >ul >  li{
+    list-style: none;
+    
+}
+.dropdown > ul > li >a{
+    text-decoration: none;
+    list-style: none;
+    color: rgb(255, 255, 255);
+}
+ .dropdownactive{
+    display: flex;
+    transition: all 0.6s ease-in-out;
+}
+
+
+.cart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    width: 2.5%;
+    height: 3vh;
+    border-radius: 50%;
+    padding: 1.5%;
+    position: relative;
+    cursor: pointer;
+}
+.icon{
+
+    font-size: 1.1rem;
+}
+.CartTotalCount {
+    font-size: 1.1rem;
+}
+
+
+.menu-line{
+    width: 30px;
+    height: 5px;
+    margin-bottom: 2px;
+    background-color: rgb(250, 250, 250);
+    display: none;
+    
+}
+
+/* cart edit start*/
+
+.cart-view{
+    position: fixed;
+    top: -100%;
+    right: 0%;
+    width: 400px;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px ;
+    background-color: black;
+    transition: 1s;
+}
+.title{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.cart-active{
+    top: 0;
+    transition: 1s;
+}
+
+.cart-view >.content{
+    margin: 20px 0 0 15px;
+    width: 90%;
+    /* height: 100vh; */
+}
+.cart-box{
+    display: grid;
+    grid-template-columns: 40% 45% 15%;
+    margin-bottom: 20px;
+    align-items: center;
+    gap: 8px;
+    padding: 1%;
+    box-shadow: 0px 0px 5px 3px white;
+}
+.cart-box > .cartimg{
+    border: 1px solid rgb(255, 255, 255);
+    padding: 2%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+   
+}
+.remove{
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+ .details .price{
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.details .qty{
+    width: 25%;
+    outline: none;
+}
+.details > .name{
+    font-size: 1rem;
+}
+#close{
+    position: absolute;
+    top: 26px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    
+}
+
+.details .decrease{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.details .increase{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.details .count{
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.cart-total{
+    display: flex;
+    height: 3vh;
+    width: 100%;
+    background-color: aliceblue;
+    justify-content: end;
+    color: black;
+    font-size: 1.2rem;
+}
+.total{
+    margin-right: 80px;
+}
+.cart-total .price{
+    margin-right: 45px;
+}
+
+/* cart edit ends */
+
+
+
+@media only screen and (max-width: 740px) {
+
+    .menu-line{
+        display: block;
+    }
+    .leftnav > h1{
+    margin-left: -20px;
+    }
+    .rightnav{
+        position: fixed;
+        right: -100%;
+        top: 10%;
+        gap: 0;
+        width: 100%;
+        height: 20vh;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.466); 
+        transition: all 2s ease;
+        z-index: 100;
+    }
+    .rightnav > li{
+        margin-bottom: 10px;
+    
+    }
+
+    .rightnav.active{
+        right: 0;
+    }
+    .menu > .active:first-child{
+        transform: rotate(45deg);
+        position: absolute;
+        top: 2.1rem;
+        right: 1.5rem;
+        
+    }
+    .menu > .active:nth-child(2){
+        display: none;
+    }
+    .menu > .active:last-child{
+        transform: rotate(-45deg);
+        position: absolute;
+        top: 2.2rem;
+        right: 1.5rem;
+    }
+
+    .usercontain{
+        margin-right:-1.0rem;
+            height: 80%;
+            width: 16%;
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+            display: none;
+        }
+        .usercontain .User{
+            width: 80%;
+            height: 55%;
+            background-color: aliceblue;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            margin-right: 0.5rem;
+        }
+        .dropdown{
+            width: 20%;
+            height: 7vh;
+            position: absolute;
+            background-color: rgba(48, 46, 46, 0.596);
+            top: 4rem;
+            left: 14rem;
+            flex-direction: column;
+            align-items: center;
+            display: none;
+            transition: all 0.6s ease-in-out;
+        }
+        .dropdownactive{
+            display: flex;
+            transition: all 0.6s ease-in-out;
+        }
+
+
+    #loginform{
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+     border: 1px solid black;
+    }
+    .login #loginform input[type="email"]{
+        margin-top: 40px;
+    }
+    .login #loginform input[type="email"], .login input[type="password"]{
+        width: 80%;
+      height: 5vh;
+    }
+    .login  .login-close{
+        position: absolute;
+        top: 6px;
+        right: 3px;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .login #loginform h3{
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+    .logincontainhidden{
+        display: none;
+    }
+    .signupcontainhidden{
+        display: none;
+    }
+
+    
+ .login .signupcontain {
+    width: max-content; 
+     height: max-content; 
+}
+    .cloths{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .cloths > .contain{
+       width: 80%;
+    }
+    
+}
+
+@media only screen and (max-width:1080px) {
+    #loginform{
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+     border: 1px solid black;
+    }
+    .login #loginform input[type="email"]{
+        margin-top: 40px;
+    }
+    .login #loginform input[type="email"], .login input[type="password"]{
+        width: 80%;
+      height: 5vh;
+    }
+     #signupform input[type="password"]{
+        width: 80%;
+      height: 5vh;
+    }
+
+    .login  .login-close{
+        position: absolute;
+        top: 6px;
+        right: 3px;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .login #loginform h3{
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+    .login{
+        position: absolute;
+        width: 100%;
+        height:75vh;
+        z-index: 1001;
+        background-color: rgba(8, 8, 8, 0.863);
+        display:  none;
+        justify-content: center;
+        align-items: center;
+        transition: all 1s;
+    }
+    .login .logcontain.logcontainhidden {
+        display: none;
+    }
+ 
+   .login .signupcontainhidden{
+        display: none;
+    }
+    
+}
+
+
+/* products */
+#Products{
+    width: 100%;
+    height: max-content;
+    margin-top: 5%;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+
+    background-color: rgba(54, 52, 52, 0.178);
+}
+#Products > h1{
+    text-align: center;
+}
+
+.cloths{
+    display: flex;
+    flex-wrap: wrap;
+}
+#titlebar{
+    width: 100%;
+    height: 6.5vh;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+}
+#titlebar > h2{
+    margin: 14px 0px 14px 150px;
+}
+#titlebar > h3{
+    height: 5vh;
+    padding: 1%;
+    margin: 8px 100px 0;
+    background-color: aliceblue;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.6s  ease;
+}
+#titlebar > h3:hover {
+    border: 1px solid white;
+    background-color: black;
+   
+}
+#titlebar > h3:hover a{
+    color: aliceblue;
+}
+#titlebar > h3 > a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1rem;
+}
+.contain{
+    width: 30%;
+    height: 40vh;
+    /* background-color: aquamarine; */
+    border: 2px solid rgba(0, 0, 0, 0.473);
+    margin: 4% 1%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.contain .top{
+    width: 100%;
+    height: 30vh;
+   /* border-bottom: 1px solid  rgb(0, 0, 0); */
+    overflow: hidden;
+}
+.top  > .productimage{
+    transition: 0.6s ease;
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+}
+.contain  .bottom{
+    height:  10vh;
+    background-color: rgba(0, 0, 0, 0.164);
+}
+.contain .Addcart{
+    width: 30%;
+    position: absolute;
+    right: 5px;
+    /* bottom: 0; */
+    height: 5vh;
+    bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: all 0.6s  ease;
+}
+.contain .Addcart:hover{
+    transition: all 0.6s  ease;
+    color: rgba(0, 0, 0, 0.979);
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    font-size: 0.8rem;
+}
+
+.top  > .productimage:hover{
+    transition: 0.6s ease;
+    transform: scale(1.3);
+    object-fit: cover;
+}
+.contain .bottom > .price{
+    margin-top: 0.5em;
+    margin-left: 1em;
+    font-size: 1em;
+}
+.contain .bottom > .name{
+    margin-top: 1em;
+    margin-left: 1em;
+    font-size: 1em;
+}
+
+footer{
+    margin-top: 4em;
+    width: 100%;
+    height: 20vh;
+    background-color: black;
+    border-radius: 4em 4em 0 0;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.2em;
+
+
+}
+
+
+.productId{
+    display: none;
+}
+footer > #date{
+    margin-top: 1em;
+}

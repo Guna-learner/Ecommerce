@@ -1,0 +1,95 @@
+/* login */
+.login{
+    position: fixed;
+    width: 80%;
+    margin:10% 10%;
+    height:75vh;
+    z-index: 1001;
+    background-color: rgba(8, 8, 8, 0.863);
+    display:  none;
+    justify-content: center;
+    align-items: center;
+    transition: all 5s;
+}
+
+.logcontain {
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+}
+
+#loginform,#signupform {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #f3f3f3;
+    color: #000000;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+.signupshow,.loginshow{
+    margin-left: 1em;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.fa-circle-xmark {
+    font-size: 30px;
+    color: #0185f1;
+    cursor: pointer;
+    position: absolute;
+    top: -8%;
+    right: -6%;
+    
+}
+
+.fa-circle-xmark:hover {
+    color: #f80000;
+}
+.logincontainhidden{
+    display: none;
+}
+
+.signupcontainhidden{
+    display: none;
+}
+
+.signupcontain {
+    width: 300px;
+    height: 250px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+}
+.signupcontain h3{
+    text-align: center;
+}
+
+
+/* login and signup form ends */
