@@ -47,7 +47,7 @@ input[type="submit"]:hover {
 }
 
 h3 {
-    margin-top: 10px;
+    margin-top: 2px;
 }
 
 .signupshow,.loginshow{
@@ -93,3 +93,15 @@ h3 {
 
 
 /* login and signup form ends */
+
+
+/* errors  */
+.email-error,.pass-error{
+    color: red;
+    letter-spacing: 0.2em;
+    font-size: 0.8em;
+    display: none;
+}
+.email-error-active{
+display: inline;
+}
