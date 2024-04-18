@@ -5,7 +5,7 @@ const section = document.getElementsByClassName("cloths");
 
 
 async function fetchCloths() {
-   let data = await fetch("../json/data.json")
+   let data = await fetch("./json/data.json")
   let result = await data.json();
   let keys = Object.keys(result);
 
