@@ -1,0 +1,116 @@
+{
+   "shirts" :[
+        {
+            "id":1,
+            "name":"Normal Shirt",
+            "price":430,
+            "image":"https://cdn.pixabay.com/photo/2017/10/13/05/26/silk-tie-2846862_640.jpg"
+        },
+        {
+            "id":2,
+            "name":"Full Hand Shirt",
+            "price":330,
+            "image":"https://5.imimg.com/data5/JZ/ZC/OS/SELLER-15348799/mens-full-sleeve-shirt-250x250.jpg"
+        },
+        {
+            "id":3,
+            "name":"Half Hand Shirt",
+            "price":300,
+            "image":"https://5.imimg.com/data5/CH/VU/JF/SELLER-26947573/120-men-linen-shirt-sky-blue-linen-1079225-jolbmug-3349-500x500.jpg"
+        },
+        {
+            "id":4,
+            "name":"Checked Shirt",
+            "price":450,
+            "image":"https://images.unsplash.com/photo-1607345366928-199ea26cfe3e?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHNoaXJ0fGVufDB8fDB8fHww"
+        },
+        {
+            "id":5,
+            "name":"Half T-Shirt",
+            "price":780,
+            "image":"https://images.unsplash.com/photo-1622445275463-afa2ab738c34?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHNoaXJ0fGVufDB8fDB8fHww"
+        },
+        {
+            "id":6,
+            "name":"Full Hand White  ",
+            "price":660,
+            "image":"https://images.unsplash.com/photo-1598033129183-c4f50c736f10?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHNoaXJ0fGVufDB8fDB8fHww"
+        }
+        ,
+        {
+            "id":7,
+            "name":"Full Hand White  ",
+            "price":1200,
+            "image":"https://plus.unsplash.com/premium_photo-1674777843130-40233fe45804?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHNoaXJ0fGVufDB8fDB8fHww"
+        }
+    ],
+
+    "pants":[
+        {
+            "id":100,
+            "name":"Denim Jeans",
+            "price":650,
+            "image":"https://as1.ftcdn.net/v2/jpg/00/62/19/12/1000_F_62191283_nRWSLLn163jcemRFtajrctCPAB4z5UPi.jpg"
+        },
+        {
+            "id":101,
+            "name":"Chino Pants",
+            "price":550,
+            "image":"https://3.imimg.com/data3/SH/OB/MY-10251693/2222-500x500.jpg"
+        },
+        {
+            "id":102,
+            "name":"Cargo Pants",
+            "price":750,
+            "image":"https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/c3942bb7cff8ec5fe9ac3d6ffc74c1c5.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp"
+        },
+        {
+            "id":103,
+            "name":"Track Pants",
+            "price":450,
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ4t1kAC9UxsPwZsQz8GXvXyi69ipygxnsRw&s"
+        },
+        {
+            "id":104,
+            "name":"Formal Trousers",
+            "price":850,
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Y3zTIFFkrvbDxYqACOGb55UZuNimvZiLHw&s"
+        }
+    ] ,
+
+    "shoes": [
+        {
+          "id": 200,
+          "name": "Sneakers",
+          "price": 260,
+          "image": "https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+          "id": 201,
+          "name": "Boots",
+          "price": 550,
+          "image": "https://images.unsplash.com/photo-1605812860427-4024433a70fd?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+          "id": 202,
+          "name": "Loafers",
+          "price": 720,
+          "image": "https://images.unsplash.com/photo-1615979474401-8a6a344de5bd?q=80&w=1181&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+          "id": 203,
+          "name": "Sandals",
+          "price": 80,
+          "image": "https://images.unsplash.com/photo-1622920799137-86c891159e44?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+          "id": 204,
+          "name": "Formal Shoes",
+          "price": 200,
+          "image": "https://images.unsplash.com/photo-1552422554-0d5af0c79fc6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        }
+      ]
+    
+
+
+}
