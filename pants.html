@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+
+    <section class="login">
+
+        <div class="logcontain ">
+         <form action="login" method="get" id="loginform">
+             <input type="email" name="email" placeholder="Email">
+             <input type="password" name="password" placeholder="Password">
+             <input type="submit" value="Login">
+             <h3>New User?<a class="signupshow" onclick="signup()">Create Account</a></h3>
+         </form>
+             <i class="fa-regular fa-circle-xmark login-close"></i>
+        </div>
+ 
+ 
+        <div class="signupcontain signupcontainhidden">
+         <form action="signup" method="post" id="signupform">
+             <input type="text" name="name" placeholder="UserName">
+             <input type="email" name="email" placeholder="Email">
+             <input type="password" name="password" placeholder="Password">
+             <input type="submit" value="signup">
+             <h3>Old User?<a class="loginshow" onclick="login()">Login</a></h3>
+         </form>
+             <i class="fa-regular fa-circle-xmark login-close"></i>
+        </div>
+ 
+     </section>
+
+    <!-- destop view -->
+    <header id="navbar">
+        <aside class="leftnav">
+           <h1>Clothing</h1>
+        </aside>
+     
+         <ul class="rightnav">
+             <li><a href="./index.html">HOME</a></li>
+             <li id="list"><a href="">PRODUCTS</a></li>
+             <li><button onclick="show()" class="button ">LOGIN</button></li>
+         </ul>
+
+         <div class="usercontain">
+             <div class="User">
+             <i class="fa-regular fa-user"></i>
+         </div>
+         <i class="fa-solid fa-caret-down " id="drop"></i>
+     </div>
+
+           
+         <div class="cart" title="view cart">
+             <div class="icon"> <span><i class="fa-solid fa-cart-shopping"></i></span></div>
+             <div  class="CartTotalCount">0</div>
+         </div>
+
+         <div class="cart-view">
+             <h1 class="title">cart-Items</h1>
+             <main class="content">
+             </main>
+
+                 <i class="fa-regular fa-circle-xmark " id="close"></i>
+                 <div class="cart-total">
+                     <div class="total">Total :</div>
+                     <div class="price">0</div>
+                 </div>
+              
+         </div>
+
+       
+        <div class="menu">
+         <div class="menu-line"></div>
+         <div class="menu-line"></div>
+         <div class="menu-line"></div>
+        </div>
+ </header>
+
+
+
+
+  <!-- slide adver -->
+   <!-- <main class="slide">
+    <section class="secimg">
+                <img src="" alt="" class="images">
+                <img src="" alt="" class="images">
+                <img src="" alt="" class="images">
+                <img src="" alt="" class="images">
+    </section>
+   </main> -->
+
+
+   <!-- Products -->
+
+   <main id="Products">
+    <h1>Pants</h1>
+
+    <section class="cloths">
+          
+    </section>
+
+
+   </main>  
+   <footer>
+    <p>This is a simple Ecommerce site with basic html css and javascript.</p>
+    <h3 id="date"></h3>
+   </footer>
+  
+       <script src="../js/pants.js"></script>
+       <script  src="../js/Cart.js"></script>
+       <script  src="../js/login.js"></script>
+       <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>

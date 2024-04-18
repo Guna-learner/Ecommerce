@@ -14,9 +14,11 @@
     <section class="login">
 
        <div class="logcontain ">
-        <form action="login" method="get" id="loginform">
-            <input type="email" name="email" placeholder="Email">
-            <input type="password" name="password" placeholder="Password">
+        <form action="" id="loginform">
+            <span class="email-error" ></span>
+            <input type="email" id="loginemail" name="email" placeholder="Email">
+            <span class="pass-error" ></span>
+            <input type="password" id="loginpass" name="password" placeholder="Password">
             <input type="submit" value="Login">
             <h3>New User?<a class="signupshow" onclick="signup()">Create Account</a></h3>
         </form>
@@ -25,10 +27,12 @@
 
 
        <div class="signupcontain signupcontainhidden">
-        <form action="signup" method="post" id="signupform">
+        <form action="" id="signupform">
             <input type="text" name="name" placeholder="UserName">
-            <input type="email" name="email" placeholder="Email">
-            <input type="password" name="password" placeholder="Password">
+            <span class="email-error" ></span>
+            <input type="email" id="signupemail" name="email" placeholder="Email">
+            <span class="pass-error" ></span>
+            <input type="password" id="signuppass" name="password" placeholder="Password">
             <input type="submit" value="signup">
             <h3>Old User?<a class="loginshow" onclick="login()">Login</a></h3>
         </form>
@@ -44,7 +48,7 @@
            </aside>
         
             <ul class="rightnav">
-                <li><a href="">HOME</a></li>
+                <li><a href="./index.html">HOME</a></li>
                 <li id="list"><a href="">PRODUCTS</a></li>
                 <li><button onclick="show()" class="button ">LOGIN</button></li>
             </ul>
@@ -91,10 +95,32 @@
     <h1>Products</h1>
 
 
+     <!-- shirts -->
+ <div id="titlebar">
+     <h2>Shirts</h2>
+     <h3><a href="./shirts.html">View More</a></h3>
+</div>
     <section class="cloths">
       
     </section>
    
+
+    <!-- pants -->
+         <div id="titlebar"> 
+            <h2>Pants</h2>
+            <h3><a href="./pants.html">View More</a></h3>
+         </div>
+         <section class="cloths">     
+         </section>
+        
+        
+        
+         <div id="titlebar"> 
+             <h2>shoes</h2>
+             <h3><a href="./shoes.html">View More</a></h3>
+         </div>
+          <section class="cloths">
+          </section>
 
 
 
@@ -104,7 +130,10 @@
     <p>This is a simple Ecommerce site with basic html css and javascript.</p>
     <h3 id="date"></h3>
    </footer>
-       <script src="../js/index.js"></script>
-       <script src="../js/login.js"></script>
+       <script  src="../js/index.js"></script>
+       <script  src="../js/login.js"></script>
+       <script  src="../js/Cart.js"></script>
+       <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+       
 </body>
 </html>
