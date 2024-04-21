@@ -286,11 +286,18 @@ margin-right: 1.4rem;
 
 @media only screen and (max-width: 740px) {
 
+    .menu{
+        display: block;
+    }
     .menu-line{
         display: block;
     }
     .leftnav > h1{
+        display: block;
     margin-left: -20px;
+    }
+    #navbar .cart{
+        display: flex;
     }
     .rightnav{
         position: fixed;
