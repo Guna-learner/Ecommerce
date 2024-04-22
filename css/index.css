@@ -447,7 +447,6 @@ footer > #date{
         justify-content: center;
         background-color: rgba(0, 0, 0, 0.466); 
         transition: all 2s ease;
-        z-index: 100;
     }
     .rightnav > li{
         margin-bottom: 10px;
