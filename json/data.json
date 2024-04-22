@@ -108,6 +108,12 @@
           "name": "Formal Shoes",
           "price": 200,
           "image": "https://images.unsplash.com/photo-1552422554-0d5af0c79fc6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+            "id":205,
+            "name":"Sneakers",
+            "price":1200,
+            "image":"https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         }
       ]
     

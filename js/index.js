@@ -1,13 +1,4 @@
 
-
-let user = document.querySelector(".usercontain")
-let drop = document.querySelector(".dropdown")
-user.addEventListener("click",()=>{
-drop.classList.toggle("dropdownactive")
-})
-
-
-
 function login(){
    log[0].style.display="flex"
 }

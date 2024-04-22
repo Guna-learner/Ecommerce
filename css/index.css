@@ -66,89 +66,6 @@
 }
 
 
-/* .User{
-    margin-right: 20px;
-    background-color: aliceblue;
-    padding: 1%;
-    border-radius: 50%;
-    color: black;
-    cursor: pointer;
-    /* display: none; */
-/* } */
-/* .profile{
-    position: absolute;
-    width: 25%;
-    height: 30vh;
-    background-color: rgb(252, 5, 5);
-    right: 4%;
-    top: 80%;
-    transition: 0.6 ease-in-out;
-    display: none;
-}
-#drop{
-    margin-right: 3rem;
-}
-.User:hover ~ .profile{
-    display: block;
-    transition: 0.6 ease-in-out;
-}  */
-
-
-
-.usercontain{
-margin-right: 1.4rem;
-    height: 80%;
-    width: 6%;
-    justify-content: center;
-    align-items: center;
-    display: none;
- /* display: flex; */
-}
-.User-Visible{
-    display:flex;
-   }
-.usercontain .User{
-    width: 60%;
-    height: 55%;
-    background-color: aliceblue;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    margin-right: 0.5rem;
-}
-.usercontain:hover{
-    cursor: pointer;
-}
-
-
-.dropdown{
-    width: 10%;
-    height: 6vh;
-    position: absolute;
-    background-color: rgba(48, 46, 46, 0.596);
-    top: 80%;
-    right: 4%;
-    flex-direction: column;
-    align-items: center;
-    display: none;
-    transition: all 0.6s ease-in-out;
-}
-.dropdown >ul >  li{
-    list-style: none;
-    
-}
-.dropdown > ul > li >a{
-    text-decoration: none;
-    list-style: none;
-    color: rgb(255, 255, 255);
-}
- .dropdownactive{
-    display: flex;
-    transition: all 0.6s ease-in-out;
-}
-
 
 .cart{
   display: flex;
@@ -270,6 +187,7 @@ margin-right: 1.4rem;
     width: 100%;
     background-color: aliceblue;
     justify-content: end;
+    align-items: center;
     color: black;
     font-size: 1.2rem;
 }
@@ -284,198 +202,14 @@ margin-right: 1.4rem;
 
 
 
-@media only screen and (max-width: 740px) {
 
-    .menu{
-        display: block;
-    }
-    .menu-line{
-        display: block;
-    }
-    .leftnav > h1{
-        display: block;
-    margin-left: -20px;
-    }
-    #navbar .cart{
-        display: flex;
-    }
-    .rightnav{
-        position: fixed;
-        right: -100%;
-        top: 10%;
-        gap: 0;
-        width: 100%;
-        height: 20vh;
-        flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.466); 
-        transition: all 2s ease;
-        z-index: 100;
-    }
-    .rightnav > li{
-        margin-bottom: 10px;
-    
-    }
-
-    .rightnav.active{
-        right: 0;
-    }
-     body #Products{
-  margin-top: 25%;
-    }
-    .menu > .active:first-child{
-        transform: rotate(-45deg);
-        position: absolute;
-        top: 2rem;    
-        right: 1em;
-    }
-    .menu > .active:nth-child(2){
-        display: none;
-    }
-    .menu > .active:last-child{
-        transform: rotate(45deg);
-        position: absolute;
-        top: 2rem;
-        right: 1em;
-    }
-
-    .usercontain{
-        margin-right:-1.0rem;
-            height: 80%;
-            width: 16%;
-            /* display: flex; */
-            justify-content: center;
-            align-items: center;
-            display: none;
-        }
-        .usercontain .User{
-            width: 80%;
-            height: 55%;
-            background-color: aliceblue;
-            color: black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 50%;
-            margin-right: 0.5rem;
-        }
-        .dropdown{
-            width: 20%;
-            height: 7vh;
-            position: absolute;
-            background-color: rgba(48, 46, 46, 0.596);
-            top: 4rem;
-            left: 14rem;
-            flex-direction: column;
-            align-items: center;
-            display: none;
-            transition: all 0.6s ease-in-out;
-        }
-        .dropdownactive{
-            display: flex;
-            transition: all 0.6s ease-in-out;
-        }
-
-  body .login .logcontain{
-    width: 250px;
-  }
-    .login #loginform{
-        width: 100%;
-        height: 80%;
-    }
-    body .login #loginform input[type="submit"]{
-
-        width: 90%;
-    }
-
-    body .login  .login-close{
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        font-size: 1.5rem;
-        cursor: pointer;
-    }
-    body .login #loginform h3{
-        margin-top: 5px;
-        font-size: 1rem;
-    }
-    .logincontainhidden{
-        display: none;
-    }
-    .signupcontainhidden{
-        display: none;
-    }
-
-
-    
- .login .signupcontain {
-    width: max-content; 
-     height: max-content; 
-}
-    .cloths{
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    .cloths > .contain{
-       width: 80%;
-    }
-
-    #Products #titlebar{
-        align-items: center;
-    }
-    #Products #titlebar > h2{
-        margin-left: 15px;
-    }
-    #Products #titlebar > h3{
-        margin: 2px 15px 2px 0;
-    }
-    
-    body footer{
-        font-size: 1em;
-        padding: 10%;
-    }
-}
-
-@media only screen and (max-width:1080px) {
-    #loginform{
-        width: 80%;
-        height: 80%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: start;
-    }
-    .login #loginform h3{
-        margin-top: 20px;
-        font-size: 1rem;
-    }
-    .login{
-        position: absolute;
-        width: 100%;
-        height:75vh;
-        z-index: 1001;
-        background-color: rgba(8, 8, 8, 0.863);
-        display:  none;
-        justify-content: center;
-        align-items: center;
-        transition: all 1s;
-    }
-    .login .logcontain.logcontainhidden {
-        display: none;
-    }
- 
-   .login .signupcontainhidden{
-        display: none;
-    }
-    
-}
 
 
 /* products */
 #Products{
     width: 100%;
     height: max-content;
-    margin-top: 12%;
+    margin-top: 10%;
    
     border-bottom: 2px solid black;
     border-top: 2px solid black;
@@ -490,6 +224,7 @@ margin-right: 1.4rem;
 .cloths{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 #titlebar{
     width: 100%;
@@ -498,6 +233,7 @@ margin-right: 1.4rem;
     color: aliceblue;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 #titlebar  h2{
     margin: 14px 0px 14px 150px;
@@ -605,11 +341,191 @@ footer{
 
 
 }
-
-
 .productId{
     display: none;
 }
 footer > #date{
     margin-top: 1em;
 }
+
+@media only screen and (max-width:1024px) {
+    .rightnav {
+        display: flex; 
+    }
+    body  #Products{
+        margin-top: -5%;
+    }
+    #loginform{
+        /* width: 80%; */
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+    .login #loginform h3{
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+    .login{
+        position: absolute;
+        width: 100%;
+        height:75vh;
+        z-index: 1001;
+        background-color: rgba(8, 8, 8, 0.863);
+        display:  none;
+        justify-content: center;
+        align-items: center;
+        transition: all 1s;
+    }
+    .login .logcontain.logcontainhidden {
+        display: none;
+    }
+ 
+   .login .signupcontainhidden{
+        display: none;
+    }
+    input[type="submit"],input[type="email"],input[type="password"] {
+        width: 100%;
+    }
+   body .slider{
+   margin-top: 20%;
+   } 
+
+ .slider .btns{
+    height: 40vh;
+   }
+
+    
+}
+
+@media only screen and (max-width: 740px) {
+
+   body .slider{
+        /* background-color: aqua; */
+        display: grid;
+        place-items: center;
+        margin-top: 30%;
+        height: 30vh;
+    }
+   body .slideitems  .items img{
+    height:inherit;
+     }
+      .slideitems .btns{
+        height: 30vh;
+        /* background-color: black; */
+     }
+     body #Products{
+        margin-top: 15%;
+          }
+    .menu{
+        display: block;
+    }
+    .menu-line{
+        display: block;
+        z-index: 99;
+    }
+    .leftnav > h1{
+        display: block;
+    margin-left: -20px;
+    z-index: 99;
+    }
+    #navbar .cart{
+        display: flex;
+        z-index: 99;
+    }
+    .rightnav{
+        position: fixed;
+        right: -100%;
+        top: 10%;
+        gap: 0;
+        width: 100%;
+        height: 20vh;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.466); 
+        transition: all 2s ease;
+        z-index: 100;
+    }
+    .rightnav > li{
+        margin-bottom: 10px;
+    
+    }
+
+    .rightnav.active{
+        right: 0;
+    }
+   
+    .menu > .active:first-child{
+        transform: rotate(-45deg);
+        position: absolute;
+        top: 2rem;    
+        right: 1em;
+    }
+    .menu > .active:nth-child(2){
+        display: none;
+    }
+    .menu > .active:last-child{
+        transform: rotate(45deg);
+        position: absolute;
+        top: 2rem;
+        right: 1em;
+    }
+
+  body .login .logcontain{
+    width: 250px;
+  }
+    .login #loginform{
+        width: 100%;
+        height: 80%;
+    }
+    body .login #loginform input[type="submit"]{
+        width: 100%;
+    }
+
+    body .login  .login-close{
+        position: absolute;
+        top: -11px;
+        right: -11px;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    body .login #loginform h3{
+        margin-top: 5px;
+        font-size: 1rem;
+    }
+    .logincontainhidden{
+        display: none;
+    }
+    .signupcontainhidden{
+        display: none;
+    }
+
+
+    
+ .login .signupcontain {
+    width: max-content; 
+     height: max-content; 
+}
+    .cloths{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .cloths > .contain{
+       width: 80%;
+    }
+
+    #Products #titlebar > h2{
+        margin-left: 15px;
+    }
+    #Products #titlebar > h3{
+        margin: 2px 15px 2px 0;
+    }
+    
+    body footer{
+        font-size: 1em;
+        padding: 10%;
+    }
+}
+

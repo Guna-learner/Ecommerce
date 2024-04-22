@@ -101,8 +101,10 @@ h3 {
     color: red;
     letter-spacing: 0.2em;
     font-size: 0.8em;
+    
     display: none;
 }
 .email-error-active{
 display: inline;
+text-align: left;
 }
