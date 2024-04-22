@@ -77,6 +77,7 @@
     padding: 1.5%;
     position: relative;
     cursor: pointer;
+    
 }
 .icon{
 
@@ -109,6 +110,7 @@
     padding: 20px ;
     background-color: black;
     transition: 1s;
+    z-index: 999;
 }
 .title{
     text-align: center;
