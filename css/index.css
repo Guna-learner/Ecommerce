@@ -420,10 +420,10 @@ footer > #date{
           }
     .menu{
         display: block;
+        z-index: 99;
     }
     .menu-line{
-        display: block;
-        z-index: 99;
+        display: block; 
     }
     .leftnav > h1{
         display: block;
@@ -459,8 +459,8 @@ footer > #date{
     .menu > .active:first-child{
         transform: rotate(-45deg);
         position: absolute;
-        top: 2rem;    
-        right: 1em;
+        top: 3rem;    
+        right: 2em;
     }
     .menu > .active:nth-child(2){
         display: none;
@@ -468,8 +468,8 @@ footer > #date{
     .menu > .active:last-child{
         transform: rotate(45deg);
         position: absolute;
-        top: 2rem;
-        right: 1em;
+        top: 3rem;
+        right: 2em;
     }
 
   body .login .logcontain{
