@@ -11,7 +11,7 @@ async function fetchCloths() {
 
 console.log(result);
   (function (result,keys){
-   for(j=0;j<result.shirts.length;j++){
+   for(j=0;j<result.pants.length;j++){
       cardLoading(j,result,keys)
     }
    

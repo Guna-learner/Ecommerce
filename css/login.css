@@ -3,7 +3,7 @@
     position: fixed;
     width: 80%;
     margin:0% 10%;
-    height:75vh;
+    height:60vh;
     z-index: 1001;
     background-color: rgba(8, 8, 8, 0.863);
     display:  none;
@@ -52,7 +52,7 @@ h3 {
 }
 
 .signupshow,.loginshow{
-    margin-left: 1em;
+    margin-left: 0.5em;
     color: #007bff;
     cursor: pointer;
 }

@@ -14,9 +14,6 @@ async function fetchCloths() {
       cardLoading(j,result,keys)
     }
 
-
-   
-
 })(result,keys);
 
 }

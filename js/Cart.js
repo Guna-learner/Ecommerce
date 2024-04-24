@@ -1,13 +1,75 @@
 
 
-
 let CartItems =[];
+
 let total = document.querySelector(".price");
 let date = new Date();
 
 var menu = document.querySelector(".menu")
 var respnav = document.querySelector(".rightnav")
 var menunav = document.querySelectorAll(".menu-line")
+
+
+
+
+async function fetchCloths() {
+   let data = await fetch("./json/data.json") 
+  let result = await data.json();
+  let keys = Object.keys(result);
+
+  (function(){
+
+   if(sessionStorage.getItem("cartItem") != null){
+      let x = JSON.parse(sessionStorage.getItem("cartItem"));
+    
+      for(i=0;i<x.length;i++){
+         CartItems.push(x[i]);
+      }
+      
+
+ 
+
+
+    for(i=0;i<x.length;i++){
+      if( x[i] >=1 && x[i] <=99){
+         cartupdate(x[i]-1,result,keys[0]);
+         // console.log(result[keys[0]][x[i]-1]);
+        }
+        else if(x[i] >=100 && x[i] <= 199){
+         
+
+                 for(k=0;k<result[keys[1]].length;k++){
+                        let actualid = result[keys[1]][k].id;
+  
+                           if( actualid == x[i]){
+                                cartupdate(k,result,keys[1]);
+                           //   console.log(result[keys[1]][k]);
+
+                           }
+
+                  }
+         
+        }
+        else if(x[i] >=200 && x[i] <= 399){
+         // cartupdate(i,result,shoes);
+        
+         for(k=0;k<result[keys[2]].length;k++){
+            let actualid = result[keys[2]][k].id;
+  
+              if( actualid == x[i]){
+               cartupdate(k,result,keys[2]);
+               //   console.log(result[keys[2]][k]);
+              }
+  
+           }
+        }
+    }
+   }
+})();
+
+}
+fetchCloths();
+
 
 document.addEventListener("DOMContentLoaded",loadContents)
 
@@ -75,7 +137,7 @@ function addCart(){
        updatingCount(Count)
        Totalamt()
        CartItems.push(itemid)
-       sessionStorage.setItem("cartItem", CartItems)
+       sessionStorage.setItem("cartItem", JSON.stringify(CartItems));
        loadContents()
       
    }
@@ -87,6 +149,49 @@ function addCart(){
    }
  
 }
+
+
+
+// cart adding 
+function cartupdate(index,apidata,keys){
+
+   let product_image = apidata[keys][index].image ;
+   let product_name =   apidata[keys][index].name ;
+   let product_price = "Rs."+apidata[keys][index].price ;
+  
+
+   let itemid =  apidata[keys][index].id;
+
+
+   
+  
+
+   
+// calling the createCart and storing 
+      let newProduct = createCart(product_image,product_name,product_price,itemid);
+      const  cartContainer = document.querySelector(".content")
+      
+      let element = document.createElement("div")
+      element.innerHTML = newProduct
+    
+      // adding the product inside cart
+      cartContainer.append(element);
+    
+    
+    
+    
+    
+      Count++;
+    
+     //Updating the cart count
+       updatingCount(Count)
+       Totalamt()
+       loadContents()
+      
+  
+ 
+}
+
 
 
 
@@ -143,6 +248,7 @@ function inc(e){
   let amt = e.parentElement.querySelector(".amt").innerText
   let cart_amt = parseFloat(amt.replace('Rs.'," "));
 
+
  
 if(num >1){
    cart_amt = cart_amt+orgi_amt;
@@ -185,6 +291,7 @@ function createCart(img,name,price,id){
    let amt =  parseFloat(e.parentElement.querySelector(".amt").innerText.replace("Rs.",""))
    total.innerText = "Rs."+(parseFloat(total.innerText.replace("Rs.",""))-amt ) 
    CartItems = CartItems.filter(val => val != e.parentElement.querySelector(".cartId").innerText )
+   sessionStorage.setItem("cartItem", JSON.stringify(CartItems));
    e.parentElement.remove()
     Count--;
  updatingCount(Count)
